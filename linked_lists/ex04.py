@@ -53,10 +53,10 @@ class SLinkedList:
         if self.headval is None:  # если список пуст
             self.headval = NewNode
             return
-        laste = self.headval
-        while laste.nextval:
-            laste = laste.nextval
-        laste.nextval = NewNode
+        last = self.headval
+        while last.nextval:
+            last = last.nextval
+        last.nextval = NewNode
 
 
 def main():
